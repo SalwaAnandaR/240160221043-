@@ -44,7 +44,7 @@ Contoh struktur direktori sebagai berikut:
 
 ## Modul Praktikum 👁‍🗨
 
-- [Modul Praktikum GIT :octocat:](https://github.com/PBWFEND/Modul-Praktikum)
+- [Modul Praktikum :octocat:](https://github.com/PBWFEND/Modul-Praktikum)
 
 ## Contributors ✨
 
