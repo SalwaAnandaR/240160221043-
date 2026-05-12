@@ -513,12 +513,15 @@
 
           </div>
 
-            <!-- CARD -->
+                    <!-- CARD -->
           <div class="portfolio-card">
 
             <div class="portfolio-image">
 
-              <img src="" loading="lazy" alt="">
+              <img
+              src="assets/images/projects/soon.webp"
+              loading="lazy"
+              alt="Coming Soon">
 
             </div>
 
@@ -529,23 +532,26 @@
               </span>
 
               <h3>
-                
+                Upcoming Project
               </h3>
 
               <p>
-                
+                New project will be added soon.
               </p>
 
             </div>
 
           </div>
 
-            <!-- CARD -->
+          <!-- CARD -->
           <div class="portfolio-card">
 
             <div class="portfolio-image">
 
-              <img src="" loading="lazy" alt="">
+              <img
+              src="assets/images/projects/soon.webp"
+              loading="lazy"
+              alt="Coming Soon">
 
             </div>
 
@@ -556,14 +562,16 @@
               </span>
 
               <h3>
-                
+                Upcoming Project
               </h3>
 
               <p>
-                
+                New project will be added soon.
               </p>
 
             </div>
+
+          </div>
 
           </div>
 
@@ -703,45 +711,87 @@
 
     <!-- HIRE ME MODAL -->
 
-      <div id="hireModal" class="modal">
+      <div class="modal" id="hireModal">
 
-        <div class="modal-content">
+      <div class="modal-content">
 
+          <!-- HEADER -->
           <div class="modal-header">
-            <h3>Let's Build Something Together</h3>
 
-           <button class="close-btn">
-            &times;
+          <h2>Hire Me</h2>
+
+          <button class="close-btn" id="closeModal">
+              <i class="fas fa-xmark"></i>
           </button>
+
           </div>
 
-          <p class="modal-desc">
-            Interested in collaborating with me?
-            Feel free to send your project details.
+          <!-- BODY -->
+          <div class="modal-body">
+
+          <p>
+              Please fill out the following form to contact me regarding 
+              work or collaboration projects.
+
           </p>
 
-          <input type="text" placeholder="Your Name">
-          <input type="email" placeholder="Your Email">
+          <form id="hire-form">
 
-          <select>
-            <option>Web Design</option>
-            <option>UI/UX</option>
-            <option>Frontend Development</option>
-          </select>
+              <div class="form-group">
 
-          <button type="button" class="submit-btn" id="sendRequest">
-            Send Request
-          </button>
-        </div>
+              <label>Name</label>
+
+              <input
+              type="text"
+              placeholder="Enter your name">
+
+              </div>
+
+              <div class="form-group">
+
+              <label>Email</label>
+
+              <input
+              type="email"
+              placeholder="Enter your email">
+
+              </div>
+
+              <div class="form-group">
+
+              <label>Project Type</label>
+
+              <select>
+
+                  <option>
+                  Website
+                  </option>
+
+                  <option>
+                  UI/UX Design
+                  </option>
+
+                  <option>
+                  Collaboration
+                  </option>
+
+              </select>
+
+              </div>
+
+              <button type="submit" class="submit-btn">
+                Send Request
+              </button>
+
+          </form>
+
+          </div>
 
       </div>
 
       </div>
 
-      <!-- JS -->
-    <script src="assets/js/script.js"></script>
-
-      <!-- LIGHTBOX -->
+       <!-- LIGHTBOX -->
 
     <div class="lightbox" id="lightbox">
 
@@ -755,6 +805,10 @@
       src="">
 
     </div>
+
+      <!-- JS -->
+    <script src="assets/js/script.js"></script>
+
 
   </body>
   </html>

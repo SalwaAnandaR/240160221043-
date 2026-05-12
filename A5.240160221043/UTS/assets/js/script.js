@@ -69,43 +69,40 @@ themeToggle.addEventListener('click', () => {
 
 });
 
-/* ================= MODAL ================= */
+/* MODAL */
 
-const modal = document.getElementById("hireModal");
+const modal =
+document.getElementById('hireModal');
 
-const openBtn = document.getElementById("openModal");
+const openModal =
+document.getElementById('openModal');
 
-const closeBtn = document.querySelector(".close-btn");
-
-const sendBtn = document.getElementById("sendRequest");
+const closeModal =
+document.getElementById('closeModal');
 
 /* OPEN */
-openBtn.addEventListener("click", () => {
-  modal.classList.add("show");
-});
 
-/* CLOSE BUTTON */
-closeBtn.addEventListener("click", () => {
-  modal.classList.remove("show");
-});
+if(openModal){
 
-/* CLICK OUTSIDE */
-window.addEventListener("click", (e) => {
+  openModal.addEventListener('click', () => {
 
-  if (e.target === modal) {
-    modal.classList.remove("show");
-  }
+    modal.classList.add('show');
 
-});
+  });
 
-/* SEND */
-sendBtn.addEventListener("click", () => {
+}
 
-  alert("Thank you! Your request has been sent.");
+/* CLOSE */
 
-  modal.classList.remove("show");
+if(closeModal){
 
-});
+  closeModal.addEventListener('click', () => {
+
+    modal.classList.remove('show');
+
+  });
+
+}
 
 /* CLICK OUTSIDE */
 
@@ -292,45 +289,46 @@ filterBtns.forEach(btn => {
 
 /* LIGHTBOX */
 
-window.addEventListener("DOMContentLoaded", () => {
+const lightbox =
+document.getElementById("lightbox");
 
-  const lightbox =
-  document.getElementById("lightbox");
+const lightboxImg =
+document.getElementById("lightbox-img");
 
-  const lightboxImg =
-  document.getElementById("lightbox-img");
+const closeLightbox =
+document.querySelector(".lightbox-close");
 
-  const closeLightbox =
-  document.querySelector(".lightbox-close");
+document
+.querySelectorAll(".portfolio-image img")
+.forEach(img => {
 
-  const portfolioImages =
-  document.querySelectorAll(".portfolio-image img");
+  img.addEventListener("click", ()=>{
 
-  /* OPEN */
+    lightbox.classList.add("show");
 
-  portfolioImages.forEach((img) => {
-
-    img.addEventListener("click", () => {
-
-      lightbox.classList.add("show");
-
-      lightboxImg.src = img.src;
-
-    });
+    lightboxImg.src = img.src;
 
   });
 
-  /* CLOSE BUTTON */
+});
 
-  closeLightbox.addEventListener("click", () => {
+/* CLOSE BUTTON */
+
+if(closeLightbox){
+
+  closeLightbox.addEventListener("click", ()=>{
 
     lightbox.classList.remove("show");
 
   });
 
-  /* CLOSE OUTSIDE */
+}
 
-  lightbox.addEventListener("click", (e) => {
+/* CLICK OUTSIDE */
+
+if(lightbox){
+
+  lightbox.addEventListener("click", (e)=>{
 
     if(e.target === lightbox){
 
@@ -340,17 +338,25 @@ window.addEventListener("DOMContentLoaded", () => {
 
   });
 
-});
+}
 
-const sections = document.querySelectorAll(".section");
+/* HIRE ME FORM */
 
-window.addEventListener("scroll", () => {
-  sections.forEach(sec => {
-    const top = sec.getBoundingClientRect().top;
-    const trigger = window.innerHeight * 0.85;
+const hireForm =
+document.getElementById("hire-form");
 
-    if (top < trigger) {
-      sec.classList.add("show");
-    }
+if(hireForm){
+
+  hireForm.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    alert("Request berhasil dikirim 🚀");
+
+    hireForm.reset();
+
+    modal.classList.remove("show");
+
   });
-});
+
+}
