@@ -703,81 +703,32 @@
 
     <!-- HIRE ME MODAL -->
 
-      <div class="modal" id="hireModal">
+      <div id="hireModal" class="modal">
 
-      <div class="modal-content">
+        <div class="modal-content">
 
-          <!-- HEADER -->
           <div class="modal-header">
+            <h3>Let's Build Something Together</h3>
 
-          <h2>Hire Me</h2>
-
-          <button class="close-btn" id="closeModal">
-              <i class="fas fa-xmark"></i>
-          </button>
-
+            <span class="close">
+              &times;
+            </span>
           </div>
 
-          <!-- BODY -->
-          <div class="modal-body">
-
-          <p>
-              Please fill out the following form to contact me regarding 
-              work or collaboration projects.
-
+          <p class="modal-desc">
+            Interested in collaborating with me?
+            Feel free to send your project details.
           </p>
 
-          <form>
+          <input type="text" placeholder="Your Name">
 
-              <div class="form-group">
+          <input type="email" placeholder="Your Email">
 
-              <label>Name</label>
+          <button type="button" class="submit-btn" id="sendRequest">
+            Send Request
+          </button>
 
-              <input
-              type="text"
-              placeholder="Enter your name">
-
-              </div>
-
-              <div class="form-group">
-
-              <label>Email</label>
-
-              <input
-              type="email"
-              placeholder="Enter your email">
-
-              </div>
-
-              <div class="form-group">
-
-              <label>Project Type</label>
-
-              <select>
-
-                  <option>
-                  Website
-                  </option>
-
-                  <option>
-                  UI/UX Design
-                  </option>
-
-                  <option>
-                  Collaboration
-                  </option>
-
-              </select>
-
-              </div>
-
-              <button type="submit" class="submit-btn">
-                Send Request
-              </button>
-
-          </form>
-
-          </div>
+        </div>
 
       </div>
 

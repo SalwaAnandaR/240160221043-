@@ -69,40 +69,43 @@ themeToggle.addEventListener('click', () => {
 
 });
 
-/* MODAL */
+/* ================= MODAL ================= */
 
-const modal =
-document.getElementById('hireModal');
+const modal = document.getElementById("hireModal");
 
-const openModal =
-document.getElementById('openModal');
+const openBtn = document.getElementById("openModal");
 
-const closeModal =
-document.getElementById('closeModal');
+const closeBtn = document.querySelector(".close-btn");
+
+const sendBtn = document.getElementById("sendRequest");
 
 /* OPEN */
+openBtn.addEventListener("click", () => {
+  modal.classList.add("show");
+});
 
-if(openModal){
+/* CLOSE BUTTON */
+closeBtn.addEventListener("click", () => {
+  modal.classList.remove("show");
+});
 
-  openModal.addEventListener('click', () => {
+/* CLICK OUTSIDE */
+window.addEventListener("click", (e) => {
 
-    modal.classList.add('show');
+  if (e.target === modal) {
+    modal.classList.remove("show");
+  }
 
-  });
+});
 
-}
+/* SEND */
+sendBtn.addEventListener("click", () => {
 
-/* CLOSE */
+  alert("Thank you! Your request has been sent.");
 
-if(closeModal){
+  modal.classList.remove("show");
 
-  closeModal.addEventListener('click', () => {
-
-    modal.classList.remove('show');
-
-  });
-
-}
+});
 
 /* CLICK OUTSIDE */
 
