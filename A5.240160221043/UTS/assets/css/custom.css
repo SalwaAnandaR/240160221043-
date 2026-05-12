@@ -654,11 +654,13 @@ img{
   transition:.3s ease;
 
   box-shadow:
-  0 10px 25px rgba(244,197,66,0.3);
+  0 10px 25px rgba(108,99,255,0.3);
 }
 
 .hire-btn:hover{
-  transform:translateY(-5px);
+  transform:translateY(-5px) scale(1.03);
+
+  box-shadow: 0 15px 30px rgba(108,99,255,0.4);
 }
 
 .modal{
