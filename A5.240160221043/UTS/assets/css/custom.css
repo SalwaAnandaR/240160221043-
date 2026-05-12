@@ -708,6 +708,9 @@ img{
   box-shadow:
   0 20px 60px rgba(0,0,0,0.3);
 
+  animation:popup .35s ease;
+
+  padding:0;
 }
 /* POPUP */
 
@@ -734,7 +737,7 @@ img{
 
   padding:1.5rem 2rem;
 
-  border-bottom:2px solid #111;
+  border-bottom:1px solid #e5e5e5;
 }
 
 .modal-header h2{
@@ -769,6 +772,19 @@ img{
 
 .modal-body{
   padding:2rem;
+}
+
+.modal-body input{
+  width:100%;
+
+  padding:1rem;
+
+  margin-top:1rem;
+
+  border:1px solid #ddd;
+  border-radius:12px;
+
+  font-size:1rem;
 }
 
 .modal-body p{
@@ -821,7 +837,7 @@ img{
 .submit-btn{
   width:100%;
 
-  margin-top:1rem;
+  margin-top:1.5rem;
 
   padding:1rem;
 
@@ -829,7 +845,6 @@ img{
   border-radius:14px;
 
   background:#b6ff3b;
-  color:#111;
 
   font-size:1rem;
   font-weight:700;
